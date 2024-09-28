@@ -59,7 +59,6 @@ def extract_video(uploaded_video):
 
 video_title = st.text_input('Введите название видео')
 video_description = st.text_area('Введите описание видео', height=100)
-
 uploaded_video = st.file_uploader('Перетащите видео файл', type=["mp4", "avi", "mov"])
 
 if uploaded_video is not None and st.button("Загрузить видео"):
