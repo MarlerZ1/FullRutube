@@ -1,0 +1,31 @@
+[data-testid="stAppViewContainer"] {
+    background-image: url("https://sun9-13.userapi.com/impg/Yp2wYB2uWR8oMi3bjLUyoQMyenIq7G2pDA9Qsw/LAYhT_K3z9A.jpg?size=2560x1402&quality=96&sign=4d19a05796bc4b2b7ac2035839d4926a&type=album");
+    background-size: cover;
+}
+[data-testid="stHeader"]{
+    background-color: rgba(0, 0, 0, 0);
+}
+[data-testid="stSidebar"]{
+    background-color: black;
+}
+
+[data-testid="stWidgetLabel"] {
+    color: rgb(253,255,254);
+    font-family: Optima, sans-serif;
+}
+
+[class="st-emotion-cache-19rxjzo ef3psqc12"] {
+    color: rgb(253,255,254);
+}
+
+.gradient-text {
+    background-color: rgb(253,255,254);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-family: Optima, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 4px;
+}

@@ -1,0 +1,19 @@
+services:  
+
+  streamlit_front:  
+    build: ./FrontVseRos
+    container_name: "streamlit_front"  
+    command: streamlit run main.py
+    ports:  
+      - "8501:8501"  
+    depends_on:  
+      - django
+  
+
+  
+  django:  
+    container_name: "django"  
+    build: ./Rutube_hack  
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:  
+      - "8000:8000"  
