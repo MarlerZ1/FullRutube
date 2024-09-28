@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'ai',
-    'rest_framework',
+    'ai', # подключения приложения с AI
+    'rest_framework', # подключение django rest framework
 ]
 
 MIDDLEWARE = [

@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-#import ai libs
+# import ai libs
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import re
@@ -17,14 +17,16 @@ tokenizer = AutoTokenizer.from_pretrained("./saved_model")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-# Create your views here.
+
+# Django rest framework class-based view с произвольным возвращаемым  json значением
 class AIAnalysis(APIView):
+    # Метод гет, наследуемымый от APIView. Вызывается при отправке гет-запроса на адрес из urls.py, по которому подключена данная class-based view.
     def get(self, request):
-        answer = {} # add by Kirill
+        answer = {}
 
         # Ввод заголовка и описания видео
-        title = request.data['video_title'] # change by Kirill
-        description = request.data['video_description'] # change by Kirill
+        title = request.data['video_title']
+        description = request.data['video_description']
 
         # Объединение и нормализация текста
         input_text = title + " " + description
@@ -50,11 +52,8 @@ class AIAnalysis(APIView):
         print("Предсказанные теги с вероятностями:")
         for prob, idx in zip(probabilities[0], indices[0]):
             tag = label_encoder.inverse_transform([idx.item()])[0]
-            answer[tag] = prob.item() # add by Kirill
+            answer[tag] = prob.item()
             print(f"{tag}: {prob.item():.4f}")
-
-
-
 
         return Response(answer)
 
