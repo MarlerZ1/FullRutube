@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('ai/', include("ai.urls", namespace="ai"))
+    path('admin/', admin.site.urls), # подключает django admin
+    path('ai/', include("ai.urls", namespace="ai")) # подключаем по адресу /ai/* view из файла urls.py приложения ai
 ]
