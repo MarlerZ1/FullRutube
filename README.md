@@ -23,7 +23,7 @@ Audios данные извлекаются и анализируются с по
 
    Поскольку каждый тег имеет собственную метрику, они отсортировываются в порядке убывания. Повторяющиеся теги усредняются. Благодаря сортировке выводятся наиболее релевантые теги.
 
-Более подробную информацию по работе ML, Frontend и Backend можно найти в README файлах по пути ```Rutube-tag/tree/ML/RuBertAudio```, ```Rutube-tag/tree/ML/RuBertVideo```, ```Rutube-tag/tree/ML/RuBertText```, ```Rutube-tag/FrontVseRos``` и ```Rutube-tag/Rutube_hack```.
+Более подробную информацию по работе ML, Frontend и Backend можно найти в README файлах по пути ```Rutube-tag/tree/ML/RuBertAudio```, ```Rutube-tag/tree/ML/RuBertVideo```, ```Rutube-tag/tree/ML/RuBertText```, ```Rutube-tag/FrontVseRos``` и ```Rutube-tag/Rutube_hack/ai```.
 
 ## Запуск системы
 Данное руководство написано под систему Windows. Запуск докера и консоли на других системах может отличаться.
