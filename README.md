@@ -12,19 +12,18 @@
 
     1.2 Анализ аудиоряда:
 Audios данные извлекаются и анализируются с помощью Whisper.
-Полученный текст суммаризируется для последущей обработки моделью ruBERT и формирования тегов. Путь до файла обучения модели ```ML/RuBertAudio/RuBertOnlyAudioTrain.ipynb.```
-
+Полученный текст суммаризируется для последущей обработки моделью ruBERT и формирования тегов. Путь до файла обучения модели ```Rutube-tag/tree/ML/RuBertAudio/RuBertOnlyAudioTrain.ipynb.```
     1.3 Анализ видеоряда:
 Видеоряд анализируется с использованием BLIP. Полученный текст переводится на русский с помощью модели Helsinki.
-Краткие описания создаются с помощью BART. Текст поступает на модель ruBERT для получения тегов. Путь до файла обучения модели ```ML/RuBertVideo/RuBertOnlyVideoTrain.ipynb.```
+Краткие описания создаются с помощью BART. Текст поступает на модель ruBERT для получения тегов. Путь до файла обучения модели ```Rutube-tag/tree/ML/RuBertVideo/RuBertOnlyVideoTrain.ipynb.```
 2. Получение названия и описания.
 
-   RuBERT генерирует релевантные теги на основе названия и описания. Путь до файла обучения модели ```ML/RuBertText/RuBertText/RuBertOnlyText_Train.ipynb```
+   RuBERT генерирует релевантные теги на основе названия и описания. Путь до файла обучения модели ```Rutube-tag/tree/ML/RuBertText/RuBertOnlyText_Train.ipynb```
 3. Получение финальных тегов.
 
    Поскольку каждый тег имеет собственную метрику, они отсортировываются в порядке убывания. Повторяющиеся теги усредняются. Благодаря сортировке выводятся наиболее релевантые теги.
 
-Более подробную информацию по работе ML, Frontend и Backend можно найти в README файлах по пути ```ML/RuBertAudio```, ```ML/RuBertVideo```, ```ML/RuBertText```, ```Rutube-tag/FrontVseRos``` и ```Rutube-tag/Rutube_hack```.
+Более подробную информацию по работе ML, Frontend и Backend можно найти в README файлах по пути ```Rutube-tag/tree/ML/RuBertAudio```, ```Rutube-tag/tree/ML/RuBertVideo```, ```Rutube-tag/tree/ML/RuBertText```, ```Rutube-tag/FrontVseRos``` и ```Rutube-tag/Rutube_hack```.
 
 ## Запуск системы
 Данное руководство написано под систему Windows. Запуск докера и консоли на других системах может отличаться.
